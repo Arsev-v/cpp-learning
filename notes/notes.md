@@ -98,6 +98,38 @@
     Run program on terminal:
         ./hello
 
+--Cout/Cin--
+    Cout
+        Used to print on the screen
+    Cin
+        Used to input a character
+        It is used with values and use the same type that variables
+        ->Examples:
+            #include <iostream>
+            using namespace std;
+
+            int main() {
+                int age;
+                cout << "Enter your age: ";
+                cin >> age; // user types a number, stored in variable age
+
+                cout << "You are " << age << " years old." << endl;
+                return 0;
+            }
+
+            With multiple inputs:
+                int x, y;
+                cout << "Enter two numbers: ";
+                cin >> x >> y;
+                cout << "The sum is " << x + y << endl;
+
+            Mix of input and update:
+                int battery;
+                cout << "Enter starting battery: ";
+                cin >> battery;
+
+                battery -= 30;
+                cout << "After moving, battery is " << battery << "%" << endl;
 
 --Variables--
 
